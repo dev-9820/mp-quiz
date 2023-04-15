@@ -3,15 +3,16 @@ import home from './home'
 
 const login= ()=> {
   return (
-    <div className='login-container'>
+    <div type="cont" className='login-container'>
       <h1>LOGIN</h1>
       <form>
         <input type='text' placeholder='Username'/>
         <input type='password' placeholder='Password'/>
-        <label>Register</label>
         <NextLink href='/home'>
-        <button type='submit'>Submit</button>
+        <button type='submit'>Submit</button> 
         </NextLink>
+        <button type='register'>New here? Register</button>
+       
       </form>
       </div>
   )

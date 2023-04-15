@@ -2,45 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+.login-container[type="cont"]{
+	margin-top: 100px;
+}
 .login-container {
-	margin: flex;
+
+	margin: auto;
 	width: 500px;
+	
 	padding: 20px;
-	background-color: #f0f0f0;
+	background-color: #cfc5f8;
 	border-radius: 10px;
-	box-shadow: 0 0 10px #999;
+	box-shadow: 0 0 10px #a39292;
 }
 
 h1 {
-  font-family: 'Arial Narrow Bold';
+  font-family: fantasy;
 	text-align: center;
-	
+	font-size: 30px;
+	letter-spacing: 4px;
+	padding:auto;
+	font-weight: 500;
 	margin-bottom: 20px;
 }
 
 form {
 	display: flex;
 	flex-direction: column;
+	align-self: start;
 }
 
 label {
-  cursor:pointer;
-	margin-bottom: 10px;
-	font-weight: bold;
-}
-
-input[type="text"],
-input[type="password"] {
-	padding: 10px;
-	margin-bottom: 20px;
-	border-radius: 5px;
-	border: none;
-	box-shadow: 0 0 5px #999;
-}
-
-button[type="submit"] {
-	padding: 10px 20px;
-	background-color: #4CAF50;
+	padding: 10px 100px;
+	background-color: #732fc7;
 	color: white;
 	border: none;
 	border-radius: 5px;
@@ -48,8 +42,56 @@ button[type="submit"] {
 	cursor: pointer;
 }
 
+input[type="text"],
+input[type="password"] {
+	padding: 10px;
+	font-family: cursive;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 0 5px #999;
+}
+
+button[type="submit"] {
+	padding: 10px 20px;
+	background-color:#a2c593 ;
+	color: rgb(0, 0, 0);
+	border: none;
+	border-radius: 10px;
+	font-size: 16px;
+	font: bold;
+	cursor: pointer;
+	margin-left: 185px;
+	margin-bottom: 15px;
+	
+
+}
+
 button[type="submit"]:hover {
-	background-color: #3e8e41;
+	background-color: #3a4244;
+	color: #ffffff;
+	font-style: italic;
+	transition: 0.3s;
+	
+
+
+}
+button[type="register"] {
+	padding: 10px 20px;
+	background-color: #a2c593;
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s;
+	margin-bottom: 15px;
+	
+}
+
+button[type="register"]:hover {
+	background-color: #3a4244;
+	color: #ffffff;
+	font-style: italic;
 }
 .quiz-container {
 	margin: 50px auto;
@@ -59,6 +101,7 @@ button[type="submit"]:hover {
 	border-radius: 10px;
 	box-shadow: 0 0 10px #999;
 }
+
 
 #submit {
 	display: block;
@@ -72,11 +115,11 @@ button[type="submit"]:hover {
 	cursor: pointer;
 }
 
-#submit:hover {
-	background-color: #3e8e41;
-}
+
+
+
 
 .layout{
 	margin: 100px;
-	background-color: #4CAF50;
+	background-color: #39d03e;
 }
