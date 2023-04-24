@@ -9,7 +9,6 @@
 
 	margin: auto;
 	width: 500px;
-	
 	padding: 20px;
 	background-color: #cfc5f8;
 	border-radius: 10px;
@@ -53,6 +52,8 @@ input[type="password"] {
 }
 
 button[type="submit"] {
+	align-self: center;
+	margin-right: auto;
 	padding: 10px 20px;
 	background-color:#a2c593 ;
 	color: rgb(0, 0, 0);

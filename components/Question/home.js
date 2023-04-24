@@ -60,9 +60,9 @@ export default function Question({ questions, hideExercise, finishTest }) {
                 </span>
                 <span>Back</span>
             </button>
-            <h1 className="text-2xl mt-2 capitalize">{`${
+            <h2 className="text-2xl mt-2 capitalize">{`${
                 state.currentQuestion + 1
-            }. ${question.question}`}</h1>
+            }. ${question.question}`}</h2>
             <Answers
                 answers={question.answers}
                 answerQuestion={answerQuestion}

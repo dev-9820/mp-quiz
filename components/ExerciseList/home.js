@@ -1,7 +1,6 @@
 export default function ExerciseList({ exercises, func }) {
     return (
         <>
-            <h3 className="text-2xl">Welcome User</h3>
             <h3 className="text-2xl">Pick an Exercise</h3>
             <ul>
                 {exercises.map((exercise) => (

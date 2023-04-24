@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
-import Question from "@/components/Question/home";
-import ExerciseList from "@/components/ExerciseList/home";
+import Question from "../components/Question/home";
+import ExerciseList from "../components/ExerciseList/home";
 
 export function getServerSideProps() {
     const exercises = [
@@ -116,7 +116,7 @@ export default function Home({ exercises }) {
     return (
         <>
             <Head>
-                <title>Quiz</title>
+                <title>SolveIT</title>
                 <meta name="description" content="Quiz app in next js" />
             </Head>
             <div className="w-1/2 m-auto mt-[120px] bg-gray-200 p-6 rounded-md shadow-2xl">
