@@ -10,9 +10,9 @@
 	margin: auto;
 	width: 500px;
 	padding: 20px;
-	background-color: #cfc5f8;
+	background-color: #e4bce1;
 	border-radius: 10px;
-	box-shadow: 0 0 10px #a39292;
+	box-shadow: 0 0 5px #000000;
 }
 
 h1 {
@@ -41,7 +41,7 @@ label {
 	cursor: pointer;
 }
 
-input[type="text"],
+input[type="email"],
 input[type="password"] {
 	padding: 10px;
 	font-family: cursive;
