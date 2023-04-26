@@ -10,7 +10,7 @@
 	margin: auto;
 	width: 500px;
 	padding: 20px;
-	background-color: #f4d9f6;
+	background-color: #eed8ff;
 	border-radius: 10px;
 	box-shadow: 0 0 5px #000000;
 }
@@ -86,7 +86,7 @@ button[type="register1"]
 	border-radius: 10px;
 	font-size: 16px;
 	cursor: pointer;
-	transition: 0.3s;
+	transition: 0.2s;
 	margin-bottom: 15px;
 	margin-left: 25%;
 	
@@ -99,7 +99,7 @@ button[type="register2"]
 	border-radius: 10px;
 	font-size: 16px;
 	cursor: pointer;
-	transition: 0.3s;
+	transition: 0.2s;
 	margin-bottom: 15px;
 	margin-left: 30%;
 	
@@ -145,3 +145,33 @@ button[type="register2"]:hover {
 	margin: 100px;
 	background-color: #39d03e;
 }
+h2{
+	font-size: 45px;
+	text-align: center;
+	transform: translateY(-210px);
+}
+li[type="list"]
+{
+	font-size: 25px;
+	
+}
+li[type="list"]:hover
+{
+		  
+	color: #3cdb2a;
+	text-shadow: 2px 2px 10px black;
+	transition: 0.2s;
+	
+}
+button[type="option"]{
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	gap:10px;
+	font-size: 23px
+}
+
+button[type="option"]:hover{
+	color:#3cdb2a
+}
+  
