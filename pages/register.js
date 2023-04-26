@@ -21,9 +21,9 @@ export default function Register(){
         name='password'
         placeholder='password'
         onChange={e => setRegisterPassword(e.target.value)}/>
-        <button onClick={register} type="submit">Submit</button> 
+        <button type="submit">Submit</button> 
         <NextLink href={"/"}>
-        <button type="register">Already Registered? Login</button>
+        <button type="register1">Already Registered? Login</button>
         </NextLink>
       </form>
             

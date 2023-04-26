@@ -1,7 +1,7 @@
 export default function ExerciseList({ exercises, func }) {
     return (
         <>
-            <h3 className="text-2xl">Pick an Exercise</h3>
+            <h2 className="exer">Pick an Exercise</h2>
             <ul>
                 {exercises.map((exercise) => (
                     <li className="hover:text-blue-900" key={exercise.id}>

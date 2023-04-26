@@ -119,7 +119,7 @@ export default function Home({ exercises }) {
                 <title>SolveIT</title>
                 <meta name="description" content="Quiz app in next js" />
             </Head>
-            <div className="w-1/2 m-auto mt-[120px] bg-gray-200 p-6 rounded-md shadow-2xl">
+            <div className="w-3/4 m-auto mt-[120px] bg-gray-200 p-56 rounded-md shadow-2xl">
                 <main className="">
                     {!isExerciseShown ? (
                         <ExerciseList

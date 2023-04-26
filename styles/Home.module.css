@@ -1,4 +1,8 @@
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .container {
   padding: 0 2rem;
 }
@@ -135,4 +139,8 @@
   .logo img {
     filter: invert(1);
   }
+}
+exer
+{
+  font-size: 30px ;
 }

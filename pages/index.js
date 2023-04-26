@@ -26,7 +26,7 @@ const [loginPassword, setLoginPassword] = useState('');
         />
         <button type="submit">Submit</button> 
         <NextLink href={"/register"}>
-        <button type="register">New here? Register</button>
+        <button type="register2">New here? Register</button>
         </NextLink>
       </form>
       </div>

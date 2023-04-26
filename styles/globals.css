@@ -10,7 +10,7 @@
 	margin: auto;
 	width: 500px;
 	padding: 20px;
-	background-color: #e4bce1;
+	background-color: #f4d9f6;
 	border-radius: 10px;
 	box-shadow: 0 0 5px #000000;
 }
@@ -55,7 +55,7 @@ button[type="submit"] {
 	align-self: center;
 	margin-right: auto;
 	padding: 10px 20px;
-	background-color:#a2c593 ;
+	background-color:#3cdb2a ;
 	color: rgb(0, 0, 0);
 	border: none;
 	border-radius: 10px;
@@ -77,9 +77,11 @@ button[type="submit"]:hover {
 
 
 }
-button[type="register"] {
+
+button[type="register1"]
+ {
 	padding: 10px 20px;
-	background-color: #a2c593;
+	background-color: #3cdb2a;
 	color: rgb(0, 0, 0);
 	border-radius: 10px;
 	font-size: 16px;
@@ -89,8 +91,26 @@ button[type="register"] {
 	margin-left: 25%;
 	
 }
+button[type="register2"] 
+{
+	padding: 10px 20px;
+	background-color: #3cdb2a;
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s;
+	margin-bottom: 15px;
+	margin-left: 30%;
+	
+}
 
-button[type="register"]:hover {
+button[type="register1"]:hover {
+	background-color: #3a4244;
+	color: #ffffff;
+	font-style: italic;
+}
+button[type="register2"]:hover {
 	background-color: #3a4244;
 	color: #ffffff;
 	font-style: italic;
