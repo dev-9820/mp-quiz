@@ -39,7 +39,9 @@ const [password, setPassword] = useState('');
         onChange={(e)=> setPassword(e.target.value)}
         placeholder='Password'
         />
+        <NextLink href={"/home"}>
         <button type="submit">Submit</button> 
+        </NextLink>
         <NextLink href={"/register"}>
         <button type="register2">New here? Register</button>
         </NextLink>
