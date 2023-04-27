@@ -4,26 +4,31 @@ import home from './home'
 import { useCallback, useState } from 'react'
 
 
-const login = () => {
+export default function login () {
+
+const [loginEmail, setLoginEmail] = useState('');
+const [loginPassword, setLoginPassword] = useState('');
+
+
   return (
     <div type="cont" className='login-container'>
       <title>SolveIT</title>
       <h1>LOGIN</h1>
       <form>
         <input 
-        type='email'
-        id='email'
-        placeholder='Email'/>
+        type='text'
+        name='email'
+        placeholder='email'/>
         <input 
         type='password'
-        id='password'
-        placeholder='Password'
+        name='password'
+        placeholder='password'
         />
         <button type="submit">Submit</button> 
-        <button onClick={""} type='register'>New here? Register</button>
+        <NextLink href={"/register"}>
+        <button type="register">New here? Register</button>
+        </NextLink>
       </form>
       </div>
   )
   }
-
-  export default login;
