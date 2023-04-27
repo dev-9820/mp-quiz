@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
 import Question from "../components/Question/home";
 import ExerciseList from "../components/ExerciseList/home";
+import Navbar from "../components/navbar";
 
 export function getServerSideProps() {
     const exercises = [
@@ -119,6 +120,7 @@ export default function Home({ exercises }) {
                 <title>SolveIT</title>
                 <meta name="description" content="Quiz app in next js" />
             </Head>
+            <Navbar/>
             <div className="w-3/4 m-auto mt-[10px] bg-purple-100 p-56 rounded-md shadow-2xl">
                 <main className="">
                     {!isExerciseShown ? (
