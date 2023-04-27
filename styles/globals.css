@@ -41,7 +41,7 @@ label {
 	cursor: pointer;
 }
 
-input[type="text"],
+input[type="email"],
 input[type="password"] {
 	padding: 10px;
 	font-family: cursive;
