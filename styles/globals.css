@@ -2,12 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .login-container[type="cont"]{
 	margin-top: 100px;
-	background-image: linear-gradient(#eed8ff ,#ce8eff 150px,#eed8ff );
-
-  }
+}
 .login-container {
 
 	margin: auto;
@@ -16,7 +13,6 @@
 	background-color: #eed8ff;
 	border-radius: 10px;
 	box-shadow: 2px 1px 7px #000000;
-
 }
 
 h1 {
@@ -52,7 +48,7 @@ input[type="password"] {
 	margin-bottom: 20px;
 	border-radius: 10px;
 	border: none;
-	box-shadow: 1px 1px 5px #999;
+	box-shadow: 0 0 5px #999;
 }
 
 button[type="submit"] {

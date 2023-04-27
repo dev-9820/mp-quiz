@@ -38,7 +38,6 @@ export function getQuestions(exerciseId) {
                 "Data warehouse",
                 "Transactional Data",
                 "Some Other Type of Data"
-            
             ],
             correctAnswer: "d",
         },
