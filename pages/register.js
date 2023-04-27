@@ -1,27 +1,52 @@
 import NextLink from 'next/link'
 import { useState } from 'react'
 import axios from 'axios';
+import { auth } from './firebase';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { set } from 'mongoose';
 
 
-export default function Register(){
+const Register=()=>{
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+
+  function signUp(e){
+    e.preventDefault();
+    createUserWithEmailAndPassword(auth,email,password)
+    .then((userCredential)=> {
+      console.log((userCredential));
+    }).catch((error)=> {
+      console.log(error);
+    })
+
+    alert("ACCOUNT CREATED!!")
+    
+  }
+
 
     return(
         <div type="cont" className='login-container'>
       <title>SolveIT</title>
       <h1>REGISTER</h1>
-      <form>
+      <form onSubmit={signUp}>
         <input 
-        type='text'
-        name='email'
+        type='email'
         placeholder='Email'
-        onChange={e => setRegisterEmail(e.target.value)}/>
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        />
 
         <input 
         type='password'
-        name='password'
-        placeholder='password'
-        onChange={e => setRegisterPassword(e.target.value)}/>
+        placeholder='Password'
+        value={password}
+        onChange={(e)=> setPassword(e.target.value)}
+        />
+        <NextLink href={"/"}>
         <button type="submit">Submit</button> 
+        </NextLink>
         <NextLink href={"/"}>
         <button type="register1">Already Registered? Login</button>
         </NextLink>
@@ -30,3 +55,5 @@ export default function Register(){
         </div>
     )
 }
+
+export default Register;
