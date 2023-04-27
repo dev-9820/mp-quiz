@@ -6,6 +6,11 @@
   background-color: #9c00e4;
   font-size:large;
 }
+.body
+{
+  background-image: linear-gradient(#eed8ff ,#ce8eff 150px,#eed8ff );
+
+}
 
 .welcome{
   align-self: auto;

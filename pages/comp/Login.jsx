@@ -22,7 +22,7 @@ const [password, setPassword] = useState('');
   } 
 
     return (
-        
+        <div className="background">
         <div type="cont" className='login-container'>
       <title>SolveIT</title>
       <h1>LOGIN</h1>
@@ -45,7 +45,7 @@ const [password, setPassword] = useState('');
         </NextLink>
       </form>
       </div>
-    
+    </div>
     )
 }
 

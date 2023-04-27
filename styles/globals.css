@@ -28,6 +28,8 @@ p[type="brand"]{
 	background-color: #eed8ff;
 	border-radius: 10px;
 	box-shadow: 2px 1px 7px #000000;
+	background-image: linear-gradient(#eed8ff ,#ce8eff 150px,#eed8ff );
+
 }
 .navbar{
 	padding-right: 12%;
@@ -69,7 +71,7 @@ input[type="password"] {
 	margin-bottom: 20px;
 	border-radius: 10px;
 	border: none;
-	box-shadow: 0 0 5px #999;
+	box-shadow: 1px 1px 5px #999;
 }
 
 button[type="submit"] {

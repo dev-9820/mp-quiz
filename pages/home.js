@@ -119,6 +119,8 @@ export default function Home({ exercises }) {
                 <title>SolveIT</title>
                 <meta name="description" content="Quiz app in next js" />
             </Head>
+            <div className="body" style={{background :"linear-gradient(#eed8ff ,#ce8eff 150px,#eed8ff"}}>
+ 
             <div className="w-3/4 m-auto mt-[10px] bg-purple-100 p-56 rounded-md shadow-2xl">
                 <main className="">
                     {!isExerciseShown ? (
@@ -143,6 +145,7 @@ export default function Home({ exercises }) {
                                 <span>Back</span>
                             </button>
                         </div>
+                        
                     ) : (
                         <Question
                             questions={questions}
@@ -151,6 +154,7 @@ export default function Home({ exercises }) {
                         />
                     )}
                 </main>
+           </div>
             </div>
         </>
     );
