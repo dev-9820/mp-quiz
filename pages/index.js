@@ -10,9 +10,7 @@ import app from './firebase'
 const login= ()=> {
 
   return (
-    <Login/>  
-    
-        
+    <Login/>    
   )
 }
 

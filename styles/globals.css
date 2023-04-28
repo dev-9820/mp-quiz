@@ -2,9 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+button[type="signout"]{
+	font-size: 20px;
+	align-self:flex-end;
+}
+p[type="brand"]{
+	text-align: left;
+	font-size: 30px;
+	width: fit-content;
+	text-shadow: 1px 1px 20px black;
+}
+
 .login-container[type="cont"]{
 	margin-top: 100px;
 }
+
+
 .login-container {
 
 	margin: auto;
@@ -14,6 +29,12 @@
 	border-radius: 10px;
 	box-shadow: 2px 1px 7px #000000;
 }
+.navbar{
+	padding-right: 12%;
+	margin:10px;
+	padding-left: 12%;
+}
+
 
 h1 {
   font-family: fantasy;
