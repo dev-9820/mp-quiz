@@ -16,7 +16,7 @@ export default function NavigationButton({ state, moveQuestion }) {
                 >
                     {currentQuestion !== numberOfQuestions - 1
                         ? "Next"
-                        : "Finish"}
+                        : "Submit"}
                 </button>
             );
         } else {

@@ -1,4 +1,6 @@
 
+
+
 .container {
   padding: 0 2rem;
 }
@@ -24,6 +26,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.error {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: red;
+}
+
+.footer button:disabled{
+  background-color: gray ;
 }
 
 .footer {

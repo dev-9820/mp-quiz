@@ -1,8 +1,15 @@
+import { getDisplayName } from 'next/dist/shared/lib/utils';
+import {signIn} from '../pages/comp/Login'
+import Register from '../pages/comp/Register';
+import { UserCredential } from 'firebase/auth';
 import Head from "next/head";
 import { useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
 import Question from "../components/Question/home";
 import ExerciseList from "../components/ExerciseList/home";
+import styles from '../styles/Home.module.css'
+import { useRouter } from "next/router";
+import {postData} from "../pages/comp/Register"
 
 export function getServerSideProps() {
     const exercises = [
@@ -105,7 +112,10 @@ export default function Home({ exercises }) {
     const hideExercise = () => {
         setState(initialState);
     };
+
+
     const finishTest = (score) => {
+        
         setState({
             ...state,
             isExerciseDone: true,
@@ -119,9 +129,9 @@ export default function Home({ exercises }) {
                 <title>SolveIT</title>
                 <meta name="description" content="Quiz app in next js" />
             </Head>
-            <div className="body" style={{background :"linear-gradient(#eed8ff ,#ce8eff 150px,#eed8ff"}}>
+            
  
-            <div className="w-3/4 m-auto mt-[10px] bg-purple-100 p-56 rounded-md shadow-2xl">
+            <div className="w-3/4 mt-[20px] m-auto bg-purple-100 p-[100px] rounded-md shadow-2xl">
                 <main className="">
                     {!isExerciseShown ? (
                         <ExerciseList
@@ -155,7 +165,6 @@ export default function Home({ exercises }) {
                     )}
                 </main>
            </div>
-            </div>
         </>
     );
 }

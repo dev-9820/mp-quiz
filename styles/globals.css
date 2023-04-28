@@ -3,10 +3,16 @@
 @tailwind utilities;
 
 
-
+body{
+	background-image: url("../public/bg.jpg");
+}
 button[type="signout"]{
-	font-size: 20px;
-	align-self:flex-end;
+	margin-top: 120px;
+}
+
+button[type="signout"]:hover{
+	transition-duration: 0.3ms;
+	color:#39d03e;
 }
 p[type="brand"]{
 	text-align: left;
@@ -63,7 +69,7 @@ label {
 	font-size: 16px;
 	cursor: pointer;
 }
-
+input[type="username"],
 input[type="email"],
 input[type="password"] {
 	padding: 10px;
@@ -170,8 +176,9 @@ button[type="register2"]:hover {
 }
 h2{
 	font-size: 45px;
+	
 	text-align: center;
-	transform: translateY(-210px);
+	transform: translateY(-100px);
 }
 li[type="list"]
 {
