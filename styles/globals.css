@@ -4,6 +4,8 @@
 
 
 body{
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-image: url("../public/bg.jpg");
 }
 button[type="signout"]{

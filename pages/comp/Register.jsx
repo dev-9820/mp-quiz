@@ -6,7 +6,6 @@ import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { set } from 'mongoose';
 import styles from 'styles/Home.module.css'
 import { useNavigate } from 'react-router-dom';
-import { BrowserRouter, Routes, Route, Ruoter } from 'react-router-dom';
 import { useRouter } from 'next/router';
 
 

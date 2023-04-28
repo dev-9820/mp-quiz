@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import '../styles/globals.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import '../styles/Home.module.css'
 import app, { auth } from './firebase'
 import Register from './comp/Register'
