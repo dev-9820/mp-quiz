@@ -4,7 +4,6 @@ import axios from 'axios';
 import { auth } from '../firebase';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { set } from 'mongoose';
-import { Link } from 'react-router-dom';
 
 const Register = () => {
 
